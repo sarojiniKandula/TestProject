@@ -1,0 +1,3 @@
+[filesystem "DESKTOP-ND9NCGJ|AdoptOpenJDK|1.8.0_232|145465956"]
+	timestampResolution = 1001 microseconds
+	minRacyThreshold = 0 nanoseconds
