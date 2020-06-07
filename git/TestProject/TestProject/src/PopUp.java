@@ -5,13 +5,14 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 public class PopUp {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
+		//WebDriver driver=new ChromeDriver();
+		WebDriver driver=new HtmlUnitDriver();
 		driver.get("http://popuptest.com/goodpopups.html");
 		driver.findElement(By.xpath("//a[text()='Good PopUp #3']")).click();
 		Set<String> handler = driver.getWindowHandles();
