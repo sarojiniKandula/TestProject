@@ -31,13 +31,12 @@ public class DynamicWebTableHandle {
 			 {
 				status=driver.findElement(By.xpath("//tr["+i+"]//td[5]")).getText();
 				System.out.println(status);
-			 }
-			 if(status.equals("Enabled"))
+			 			 if(status.equals("Enabled"))
 			 {
-				 statusCount=statusCount+1;
+			 statusCount=statusCount+1;
 			 }
-			 System.out.println(statusCount);
-						
+			 			 }
+			 System.out.println(statusCount);		
 	}
 		 
 	
